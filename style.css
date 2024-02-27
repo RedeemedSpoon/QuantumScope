@@ -1,0 +1,21 @@
+
+@font-face {
+   font-family: "Digital-Serial-Regular";
+   src: url("assets/digital-serial-regular.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Digital-Serial-Bold";
+   src: url("assets/digital-serial-bold.ttf") format("truetype");
+   font-style: normal;
+   font-weight: bold;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+}
