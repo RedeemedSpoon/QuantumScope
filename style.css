@@ -1,8 +1,10 @@
+/** ----- Génerale ----- **/
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
 @font-face {
-   font-family: "Digital-Serial-Bold";
-   src: url("assets/digital-serial-bold.ttf") format("truetype");
+   font-family: "Continuum Medium";
+   src: url("assets/font.ttf") format("truetype");
    font-weight: bold;
 }
 
@@ -29,9 +31,45 @@ a:hover {
    text-decoration: underline;
 }
 
+h1,
+h2,
+.h2,
+.h3 {
+   font-family: "Continuum Medium";
+}
+
+h2,
+.h2 {
+   font-size: 22px;
+}
+
+.h3 {
+   font-size: 18px;
+}
+
+ul {
+   list-style: none;
+}
+
+li {
+   margin-left: 20px;
+   margin-top: 15px;
+}
+
+li:hover {
+   cursor: pointer;
+}
+
+li img {
+   height: 17px;
+   margin: 0 5px;
+}
+
 .caché {
   display: none;
 }
+
+/** ----- Header ----- **/
 
 header {
    position: fixed;
@@ -50,6 +88,8 @@ header img {
    height: 45px;	
    padding-top: 5px;
 }
+
+/** ----- bar Recherche  ----- **/
 
 #barRecherche {
    display: flex;
@@ -86,6 +126,8 @@ input[type="image"]:hover {
    text-decoration: none;
 }
 
+/** ----- Footer ----- **/
+
 footer {
    margin-top: 75px;
    margin-bottom: 20px;
@@ -95,39 +137,7 @@ footer {
    align-items: center;
 }
 
-h1,
-h2,
-.h2,
-.h3 {
-   font-family: "Digital-Serial-Bold";
-}
-
-h2,
-.h2 {
-   font-size: 22px;
-}
-
-.h3 {
-   font-size: 18px;
-}
-
-ul {
-   list-style: none;
-}
-
-li {
-   margin-left: 20px;
-   margin-top: 15px;
-}
-
-li:hover {
-   cursor: pointer;
-}
-
-li img {
-   height: 17px;
-   margin: 0 5px;
-}
+/** ----- Section  ----- **/
 
 section {
    position: fixed;
@@ -135,6 +145,8 @@ section {
    margin-left: 9rem;
    user-select: none;
 }
+
+/** ----- Page Centrale  ----- **/
 
 main {
    display: flex;
@@ -161,6 +173,8 @@ main img {
    margin: 20px 0;
    user-select: none;
 }
+
+/** ----- Contact  ----- **/
 
 form {
    display: flex;
@@ -193,11 +207,14 @@ textarea {
 form input {
    width: 500px;
 }
+
 textarea {
   resize: none;
   width: 600px;
-  height: 500px
+  height: 500px;
 }
+
+/** ----- Bouttons  ----- **/
 
 #buttons {
    display: flex;
@@ -234,4 +251,85 @@ button:hover {
 .version2:hover {
     background-color: #24314d;
     color: #fefefe;
+}
+
+/** ----- Media Queries  ----- **/
+
+@media only screen and (max-width: 692px) {
+	 header {
+		padding: 5px 10px;
+	 }
+	
+	 #lien {
+		 font-size: 15px;
+	 }
+	
+	 input[type="search"] {
+		 font-size: 15px;
+		 padding: 5px;
+		 width: 125px;
+	 }
+
+	 input[type="image"] {
+		  width: 20px;
+		  height: 20px;
+		  margin-right: 5px;
+		  padding-top: 0px;
+	 }
+
+	 header img {
+		height: 30px;
+	 }
+	 
+	 section {
+	 	 display: none
+	 }
+	 
+	 main {
+	 	 margin: 8.5rem 3rem 0 3rem;
+	 }
+	 
+	 main img {
+		height: 250px;
+		max-width: 400px;
+	}
+	
+	 form input {
+   	 width: 200px;
+	 }
+
+	 textarea {
+	    width: 300px;
+	    height: 300px;
+	 }
+}
+
+@media only screen and (min-width: 628px) and (max-width: 1199px) {
+	 section {
+	 	 display: none
+	 }
+	 
+	 main {
+	 	 margin: 8.5rem 7.5rem 0 7.5rem;
+	 }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	 section {
+		 display: none
+	 }
+	 
+	 main {
+	 	 margin: 8.5rem 17.5rem 0 17.5rem;
+	 }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+	 section {
+		 margin-left: 5rem;
+	 }
+	 
+	 main {
+	 	 margin: 8.5rem 15rem 0 32.5rem;
+	 }
 }
