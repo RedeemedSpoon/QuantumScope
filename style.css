@@ -25,6 +25,11 @@ a:hover {
    text-decoration: underline;
 }
 
+h1 {
+	display: flex;
+	align-self: center;
+}
+
 h1,
 h2,
 .h2,
@@ -62,8 +67,8 @@ li img {
    margin: 0 5px;
 }
 
-.caché {
-  display: none;
+.visible {
+  display: block;
 }
 
 /** ----- Header ----- **/
@@ -143,12 +148,16 @@ section {
    user-select: none;
 }
 
+li > ul {
+	display: none;
+}
+
 /** ----- Page Centrale  ----- **/
 
 main {
    display: flex;
    flex-direction: column;
-   margin: 8.5rem 32.5rem 0 37.5rem;
+   margin: 8.5rem 30rem 0 37.5rem;
    row-gap: 30px;
 }
 
