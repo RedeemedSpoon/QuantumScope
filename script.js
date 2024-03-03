@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
    const listeItems = document.querySelectorAll(".liste");
    const place = (window.location.pathname.includes("chapitre") ? ".." : ".");
-   console.log(place)
    let toggle = null
    
    listeItems.forEach(listeItem => {

@@ -3,7 +3,6 @@
 @font-face {
    font-family: "Digital-Serial-Bold";
    src: url("assets/digital-serial-bold.ttf") format("truetype");
-   font-style: normal;
    font-weight: bold;
 }
 
@@ -48,7 +47,7 @@ header {
 }
 
 header img {
-   height: 35px;
+   height: 45px;	
    padding-top: 5px;
 }
 
@@ -140,7 +139,7 @@ section {
 main {
    display: flex;
    flex-direction: column;
-   margin: 7rem 32.5rem 0 37.5rem;
+   margin: 8.5rem 32.5rem 0 37.5rem;
    row-gap: 30px;
 }
 
@@ -156,7 +155,7 @@ main img {
    display: flex;
    align-self: center;
    height: 350px;
-   width: 350px;
+   max-width: 600px;
    border: #14213d solid 4px;
    border-radius: 15px;
    margin: 20px 0;
