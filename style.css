@@ -2,12 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-@font-face {
-   font-family: "Continuum Medium";
-   src: url("assets/font.ttf") format("truetype");
-   font-weight: bold;
-}
-
 * {
    margin: 0;
    padding: 0;
@@ -35,7 +29,10 @@ h1,
 h2,
 .h2,
 .h3 {
-   font-family: "Continuum Medium";
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h2,
@@ -97,7 +94,7 @@ header img {
    padding: 0 15px;
    border-radius: 10px;
    background-color: #fdb541;
-   border: #14213d solid 1px
+   border: #14213d solid 1px;
 }
 
 input[type="search"] {
