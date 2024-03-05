@@ -1,55 +1,55 @@
-## Bienvenue sur QuantumScope : Explorez le monde fascinant de la physique quantique
+## Welcome to QuantumScope: Explore the fascinating world of quantum mechanics
 
-![QuantumScope](./assets/marque.png)
+![QuantumScope](./assets/brand.png)
 
-**Plongez dans l'univers mystérieux et captivant de la mécanique quantique avec QuantumScope !**
+**Immerse yourself in the mysterious and captivating world of quantum mechanics with QuantumScope!**
 
-[QuantumScope](https://redeemedspoon.github.io/QuantumScope/) vous invite à un voyage extraordinaire à la découverte des principes fondamentaux et des applications révolutionnaires de cette branche de la physique. Que vous soyez étudiant, enseignant, passionné de science ou simplement curieux, QuantumScope vous propose une exploration accessible et enrichissante du monde quantique.
+[QuantumScope](https://redeemedspoon.github.io/QuantumScope/) invites you on an extraordinary journey to discover the fundamental principles and revolutionary applications of this branch of physics, math etc. Whether you are a student, teacher, science enthusiast or simply curious, QuantumScope offers you an accessible and enriching exploration of the quantum world.
 
 
-**À qui s'adresse QuantumScope ?**
+**Who is QuantumScope for?**
 
-* Aux étudiants et à toute personne curieuse de la mécanique quantique et de ses implications.
-* Aux enseignants à la recherche de ressources attrayantes pour enseigner la matière.
-* Aux personnes ayant un intérêt général pour la science et la technologie.
+* To students and anyone curious about quantum mechanics and its implications.
+* For teachers looking for attractive resources to teach the subject.
+* To people with a general interest in science and technology.
 
-**Au programme de votre exploration :**
+**On the agenda for your exploration:**
 
-**Physique Quantique:**
+**Quantum physics:**
 
-* **Introduction au monde quantique:** Dévoilez les concepts clés et les particularités de la mécanique quantique.
-* **Dualité onde-corpuscule:** Explorez la nature fascinante de la lumière et de la matière à la fois comme ondes et comme particules.
-* **Quantisation et niveaux d'énergie:** Plongez dans les secrets des niveaux d'énergie discrets et quantifiés des systèmes quantiques.
-* **Principe d'incertitude:** Appréhendez les limites inhérentes à la mesure simultanée de certaines propriétés physiques.
-* **Superposition et enchevêtrement:** Découvrez des phénomènes intrigants qui remettent en question notre intuition du monde macroscopique.
-* **Applications de la physique quantique:** Explorez les implications concrètes de la physique quantique dans divers domaines, tels que la technologie, la médecine et la science des matériaux.
+* **Introduction to the quantum world:** Unveil the key concepts and particularities of quantum mechanics.
+* **Wave-particle duality:** Explore the fascinating nature of light and matter as both waves and particles.
+* **Quantization and Energy Levels:** Delve into the secrets of discrete and quantized energy levels of quantum systems.
+* **Uncertainty principle:** Understand the limits inherent in the simultaneous measurement of certain physical properties.
+* **Superposition and entanglement:** Discover intriguing phenomena that challenge our intuition of the macroscopic world.
+* **Applications of Quantum Physics:** Explore the real-world implications of quantum physics in diverse fields, such as technology, medicine, and materials science.
 
-**Mathématiques Quantiques:**
+**Quantum Mathematics:**
 
-* **Algèbre linéaire et notation Bra-ket:** Maîtrisez les outils mathématiques nécessaires à la formulation de la mécanique quantique.
-* **Équation de Schrödinger et fonctions d'onde:** Explorez l'équation fondamentale qui régit le comportement des systèmes quantiques.
-* **Valeurs propres et vecteurs propres:** Appréhendez les concepts clés liés aux opérateurs quantiques et à leurs propriétés.
-* **Opérateurs et mesures:** Comprenez les processus de mesure en mécanique quantique et leurs implications.
-* **Théorie des perturbations et méthodes variationnelles:** Développez des outils pour résoudre des problèmes quantiques complexes.
+* **Linear Algebra and Bra-ket Notation:** Master the mathematical tools needed to formulate quantum mechanics.
+* **Schrödinger equation and wave functions:** Explore the fundamental equation that governs the behavior of quantum systems.
+* **Eigenvalues and eigenvectors:** Understand the key concepts related to quantum operators and their properties.
+* **Operators and measurements:** Understand the measurement processes in quantum mechanics and their implications.
+* **Perturbation theory and variational methods:** Develop tools to solve complex quantum problems.
 
-**Chimie Quantique:**
+**Quantum Chemistry:**
 
-* **Structure électronique des atomes et des molécules:** Percez les secrets de la structure et des propriétés chimiques des atomes et des molécules.
-* **Tableau périodique et liaison chimique:** Explorez les liens entre la configuration électronique et les propriétés chimiques des éléments.
-* **Orbitales moléculaires et configurations électroniques:** Visualisez et comprenez la distribution des électrons dans les molécules.
-* **Simulations quantiques de réactions chimiques:** Prédisez et explorez les mécanismes réactionnels avec des simulations quantiques.
-* **Applications en science des matériaux:** Développez de nouveaux matériaux aux propriétés inédites grâce à la chimie quantique.
+* **Electronic structure of atoms and molecules:** Uncover the secrets of the structure and chemical properties of atoms and molecules.
+* **Periodic Table and Chemical Bonding:** Explore the connections between the electronic configuration and chemical properties of the elements.
+* **Molecular orbitals and electronic configurations:** Visualize and understand the distribution of electrons in molecules.
+* **Quantum simulations of chemical reactions:** Predict and explore reaction mechanisms with quantum simulations.
+* **Applications in materials science:** Develop new materials with unprecedented properties using quantum chemistry.
 
-**Informatique Quantique:**
+**Quantum Computing:**
 
-* **Qubits et circuits quantiques:** Découvrez les unités d'information et les architectures de calcul du monde quantique.
-* **Algorithmes quantiques:** Explorez des algorithmes révolutionnaires capables de résoudre certains problèmes plus rapidement que les ordinateurs classiques.
-* **Correction d'erreurs quantiques et tolérance aux fautes:** Apprenez à pallier les erreurs inhérentes aux systèmes quantiques pour garantir un fonctionnement fiable.
-* **Apprentissage automatique quantique:** Développez de nouvelles approches d'apprentissage automatique utilisant la puissance de l'informatique quantique.
-* **Applications futures de l'informatique quantique:** Imaginez les potentialités révolutionnaires de l'informatique quantique dans divers domaines.
+* **Qubits and quantum circuits:** Discover the information units and computing architectures of the quantum world.
+* **Quantum Algorithms:** Explore revolutionary algorithms that can solve certain problems faster than classical computers.
+* **Quantum error correction and fault tolerance:** Learn how to overcome errors inherent in quantum systems to ensure reliable operation.
+* **Quantum Machine Learning:** Develop new machine learning approaches using the power of quantum computing.
+* **Future Applications of Quantum Computing:** Imagine the revolutionary potentials of quantum computing in various fields.
 
-**Sujets Avancés:**
+**Advanced Topics:**
 
-* **Théorie quantique des champs et le Modèle Standard:** Explorez la théorie qui unifie les forces fondamentales de l'univers.
-* **Gravité quantique et recherche d'une théorie unifiée:** Partez à la découverte de la quête pour une théorie quantique de la gravité.
-* **Implications philosophiques de la mécanique quantique:** Réfléchissez aux implications fondamentales de la mécanique quantique sur notre vision du monde.
+* **Quantum Field Theory and the Standard Model:** Explore the theory that unifies the fundamental forces of the universe.
+* **Quantum gravity and the search for a unified theory:** Discover the quest for a quantum theory of gravity.
+* **Philosophical Implications of Quantum Mechanics:** Consider the fundamental implications of quantum mechanics for our worldview.
