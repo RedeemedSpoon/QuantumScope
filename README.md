@@ -1,6 +1,6 @@
 ## Bienvenue sur QuantumScope : Explorez le monde fascinant de la physique quantique
 
-![QuantumScope](./assets/marque.png)
+![QuantumScope](./assets/brand.png)
 
 **Plongez dans l'univers mystérieux et captivant de la mécanique quantique avec QuantumScope !**
 
