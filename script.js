@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-	const barRecherche = document.querySelector('input[type="search"]');
-	const listeItems = document.querySelectorAll(".liste");
-	const place = (window.location.pathname.includes("chapitre") ? ".." : ".");
-	const filtre = ["et ", "le ", "la ", "l'", "d'", "de ", "du ", "aux ", "au ", " ", "-", "_", ".", ","];
-	let résultat = "erreur";
+	const searchBar = document.querySelector('input[type="search"]');
+	const listItems = document.querySelectorAll(".list");
+	const place = (window.location.pathname.includes("chapiter") ? ".." : ".");
+	const filter = ["the " , " ", "-", "_", ".", ","];
+	let result = "error";
 	let toggle = null;
 	const urls = {
 	  "1.1": "introductionaumondequantique",
 	  "1.2": "dualitéondecorpuscule",
-	  "1.3": "quantificationetniveauxd énergie",
+	  "1.3": "quantificationetniveauxdénergie",
 	  "1.4": "principeincertitude",
 	  "1.5": "superpositionetenchevêtrement",
 	  "1.6": "applicationsdelaphysiquephysiquequantique",
@@ -28,20 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
 	  "4.2": "algorithmesquantiques",
 	  "4.3": "correctiond erreursertolérance",
 	  "4.4": "apprentissageautomatiquequantique",
-	  "4.5": "applicationsdel informatiquequantique",
+	  "4.5": "applicationsdelinformatiquequantique",
 	  "5.1": "théoriedeschampsetmodèlestandard",
 	  "5.2": "gravitéquantiqueetthéorieunifiée",
 	  "5.3": "implicationsphilosophiques"
 	};
 
+	listItems.forEach(listItem => {
+	  const partie = listItem.querySelector("ul");
+	  const fléche = listItem.querySelector("h2 img");
 
-	listeItems.forEach(listeItem => {
-	  const partie = listeItem.querySelector("ul");
-	  const fléche = listeItem.querySelector("h2 img");
-
-	  listeItem.querySelector("h2").addEventListener("click", function() {
-		 if (toggle !== listeItem) {
-		   listeItems.forEach(otherItem => {
+	  listItem.querySelector("h2").addEventListener("click", function() {
+		 if (toggle !== listItem) {
+		   listItems.forEach(otherItem => {
 		   otherItem.querySelector("ul").classList.remove("visible");
 		   otherItem.querySelector("img").setAttribute("src", `${place}/assets/off.png`);
 		   });
@@ -50,16 +49,16 @@ document.addEventListener("DOMContentLoaded", function() {
 		 partie.classList.toggle('visible');
 		 direction = fléche.getAttribute("src") === `${place}/assets/on.png` ? `${place}/assets/off.png` : `${place}/assets/on.png`;
 		 fléche.setAttribute("src", direction);
-		 toggle = listeItem;
+		 toggle = listItem;
 	  });
 	});
 
-	barRecherche.addEventListener("keypress", function(e) {
+	searchBar.addEventListener("keypress", function(e) {
 		if (e.key === "Enter") {
-			 let recherche = barRecherche.value.toLowerCase();
-			 for (str of filtre) recherche = recherche.replace(str, '');
-			 for (page in urls) résultat = urls[page].includes(recherche) ? page : résultat;
-			 window.location.href = `https://redeemedspoon.github.io/QuantumScope/chapitre/${résultat}.html`;
+			 let recherche = searchBar.value.toLowerCase();
+			 for (str of filter) recherche = recherche.replace(str, '');
+			 for (page in urls) result = urls[page].includes(recherche) ? page : result;
+			 window.location.href = `https://redeemedspoon.github.io/QuantumScope/chapiter/${result}.html`;
 		};
 	});
 });
