@@ -1,41 +1,41 @@
 const searchBar = document.querySelector('input[type="search"]');
 const listItems = document.querySelectorAll(".list");
 const place = (window.location.pathname.includes("chapiter") ? ".." : ".");
-const filter = ["the " , " ", "-", "_", ".", ","];
+const filter = ["the ", "a ", "an ", " ", "-", "_", ".", ","];
 let result = "error";
 let toggle = null;
 const urls = {
-  "1.1": "introductionaumondequantique",
-  "1.2": "dualitéondecorpuscule",
-  "1.3": "quantificationetniveauxdénergie",
-  "1.4": "principeincertitude",
-  "1.5": "superpositionetenchevêtrement",
-  "1.6": "applicationsdelaphysiquephysiquequantique",
-  "2.1": "structureelectronique",
-  "2.2": "tableauperiodiqueetliaisonchimique",
-  "2.3": "orbitalesmoleculaires",
-  "2.4": "configurationselectroniques",
-  "2.5": "simulationsquantiquesderéactionschimiques",
-  "2.6": "applicationsensciencedesmateriaux",
-  "3.1": "algèbrelinéaireetnotationbraket",
-  "3.2": "équationdeschrödingeretfonctionsdonde",
-  "3.3": "valeurspropresetvecteurspropres",
-  "3.4": "opérateuretsmesures",
-  "3.5": "théoriedesperturbations",
-  "3.6": "méthodesvariationnelles",
-  "4.1": "qubitsandcircuitsquantiques",
-  "4.2": "algorithmesquantiques",
-  "4.3": "correctiond erreursertolérance",
-  "4.4": "apprentissageautomatiquequantique",
-  "4.5": "applicationsdelinformatiquequantique",
-  "5.1": "théoriedeschampsetmodèlestandard",
-  "5.2": "gravitéquantiqueetthéorieunifiée",
-  "5.3": "implicationsphilosophiques"
+  "1.1":"introductiontothequantumworld",
+  "1.2":"waveparticleduality",
+  "1.3":"quantizationandenergylevels",
+  "1.4":"uncertaintyprinciple",
+  "1.5":"superpositionandentanglement",
+  "1.6":"applicationsofquantumphysics",
+  "2.1":"electronicstructure",
+  "2.2":"periodictableandchemicalbonding",
+  "2.3":"molecularorbitals",
+  "2.4":"electronconfigurations",
+  "2.5":"quantumsimulationsofchemicalreactions",
+  "2.6":"applicationsinsciencesdesmateriaux",
+  "3.1":"linearalgebraandbraketnotation",
+  "3.2":"schrödingerequationandwavefunctions",
+  "3.3":"eigenvaluesandeigenvectors",
+  "3.4":"operatorsandmeasurements",
+  "3.5":"perturbationtheory",
+  "3.6":"variationalmethods",
+  "4.1":"qubitsandquantumcircuits",
+  "4.2":"quantumalgorithms",
+  "4.3":"faulttoleranceanderrorcorrection",
+  "4.4":"quantummachinelearning",
+  "4.5":"applicationsofquantumcomputing",
+  "5.1":"fieldtheoryandstandardmodels",
+  "5.2":"quantumgravityandunifiedtheory",
+  "5.3":"philosophicalimplications"
 };
 
 listItems.forEach(listItem => {
-  const partie = listItem.querySelector("ul");
-  const fléche = listItem.querySelector("h2 img");
+  const part = listItem.querySelector("ul");
+  const arrow = listItem.querySelector("h2 img");
 
   listItem.querySelector("h2").addEventListener("click", function() {
 	 if (toggle !== listItem) {
@@ -45,19 +45,18 @@ listItems.forEach(listItem => {
 	   });
 	 };
 	 	
-	 partie.classList.toggle('visible');
-	 direction = fléche.getAttribute("src") === `${place}/assets/on.png` ? `${place}/assets/off.png` : `${place}/assets/on.png`;
-	 fléche.setAttribute("src", direction);
+	 part.classList.toggle('visible');
+	 direction = arrow.getAttribute("src") === `${place}/assets/on.png` ? `${place}/assets/off.png` : `${place}/assets/on.png`;
+	 arrow.setAttribute("src", direction);
 	 toggle = listItem;
   });
 });
 
 searchBar.addEventListener("keypress", function(e) {
 	if (e.key === "Enter") {
-		 let recherche = searchBar.value.toLowerCase();
-		 for (str of filter) recherche = recherche.replace(str, '');
-		 for (page in urls) result = urls[page].includes(recherche) ? page : result;
-		 window.location.href = `https://redeemedspoon.github.io/QuantumScope/chapiter/${result}.html`;
+	  let recherche = searchBar.value.toLowerCase();
+	  for (str of filter) recherche = recherche.replace(str, '');
+	  for (page in urls) result = urls[page].includes(recherche) ? page : result;
+	  window.location.href = `https://redeemedspoon.github.io/QuantumScope/chapiter/${result}.html`;
 	};
 });
-
